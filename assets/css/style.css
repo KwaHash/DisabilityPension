@@ -1923,6 +1923,58 @@ fieldset {
   }
 }
 
+.charge__table-wrap {
+  margin: 1rem 0 1.5rem;
+  overflow-x: auto;
+}
+
+.charge__table {
+  width: 100%;
+  min-width: 28rem;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 639px) {
+  .charge__table {
+    font-size: 1.8rem;
+  }
+}
+.charge__table th,
+.charge__table td {
+  padding: 1rem 0;
+  border: 1px solid rgba(139, 105, 80, 0.3);
+  text-align: center;
+  vertical-align: top;
+}
+.charge__table thead th {
+  background-color: rgba(139, 105, 80, 0.12);
+  font-weight: 700;
+  color: #8B6950;
+}
+.charge__table tbody tr:nth-child(even) {
+  background-color: rgba(139, 105, 80, 0.04);
+}
+.charge__table.charge__table--highlight thead th {
+  background-color: rgba(139, 105, 80, 0.18);
+}
+.charge__table.charge__table--highlight .charge__table-price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #8B6950;
+}
+@media only screen and (max-width: 639px) {
+  .charge__table.charge__table--highlight .charge__table-price {
+    font-size: 1.9rem;
+  }
+}
+
+.charge__table-price {
+  font-weight: 600;
+  color: #8B6950;
+  white-space: nowrap;
+}
+
 .charge__block {
   margin: 1.5rem 0;
 }
@@ -2024,6 +2076,65 @@ p.charge__note {
   font-size: 1.4rem;
   color: #555;
   line-height: 1.6;
+}
+
+.charge__cta {
+  margin-top: 3rem;
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid rgba(139, 105, 80, 0.2);
+  text-align: center;
+}
+
+.charge__cta-lead {
+  margin: 0 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #8B6950;
+}
+@media only screen and (max-width: 639px) {
+  .charge__cta-lead {
+    font-size: 1.8rem;
+  }
+}
+
+.charge__cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.charge__cta-btn {
+  display: inline-block;
+  padding: 1rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+.charge__cta-btn:hover {
+  opacity: 0.9;
+}
+@media only screen and (max-width: 639px) {
+  .charge__cta-btn {
+    font-size: 1.5rem;
+    padding: 1.2rem 1.8rem;
+    min-width: 80%;
+  }
+}
+.charge__cta-btn--line {
+  background-color: #06c755;
+  border: 2px solid #06c755;
+}
+.charge__cta-btn--mail {
+  background-color: #8B6950;
+  border: 2px solid #8B6950;
+}
+.charge__cta-btn--phone {
+  background-color: #327C49;
+  border: 2px solid #327C49;
 }
 
 .support__page {
@@ -2992,5 +3103,3 @@ p.charge__note {
   background-color: #d8ddc0;
   border-color: #b5c09a;
 }
-
-/*# sourceMappingURL=style.css.map */
